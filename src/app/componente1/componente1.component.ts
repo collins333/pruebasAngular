@@ -12,10 +12,9 @@ export class Componente1Component implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe(params => {
-      if (params['id'] != null) {
-        console.log('llega con el parámetro id: ' + params['id']);
+      if (params.id != null) {
+        console.log(`llega con el parámetro id: ${params.id}`);
       }
     });
 }
-
 }
